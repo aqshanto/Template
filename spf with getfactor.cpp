@@ -9,7 +9,8 @@ void sieve(){
     for(int i=3;i*i<N;i+=2){
         if(spf[i]==i){
             for(int j=i*i;j<N;j+=2*i){
-                if(spf[j] == j)spf[j]=i;
+                if(spf[j] == j)
+                    spf[j]=i;
             }
         }
     }
